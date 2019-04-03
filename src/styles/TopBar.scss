@@ -1,0 +1,24 @@
+.top-bar {
+  background: 
+  linear-gradient(to bottom right, rgba(40,40,40,0.8), rgba(60,60,60,0.8)),
+  url(../images/chairsit.jpg);
+  background-size: auto;
+  color: white;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_heading {
+    margin: 0;
+    font-family: "Suez One", sans-serif;
+    font-size: 90px;
+  }
+
+  &_accolade {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+}
