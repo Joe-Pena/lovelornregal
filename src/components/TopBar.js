@@ -10,6 +10,6 @@ class TopBar extends React.Component {
       </div>
     )
   }
-}
+};
 
 export default TopBar;
