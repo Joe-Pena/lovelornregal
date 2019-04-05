@@ -6,20 +6,46 @@
   background-attachment: fixed;
   color: white;
   height: 520px;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 8% 1fr;
+  grid-template-areas: 
+    "navbar navbar navbar"
+    ". info .";
+
+  &--navbar {
+    grid-area: navbar;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, rgba(20,20,20,1), rgba(50,50,50,0.0));
+
+    &_link {
+      list-style: none;
+      font-family: "Suez One", Georgia, 'Times New Roman', Times, serif;
+    }
+
+  }
+
+ &_info {
+  grid-area: info;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  &_heading {
-    margin: 0;
-    font-family: "Suez One", sans-serif;
-    font-size: 90px;
-  }
+    &--heading {
+      margin: 0;
+      font-family: "Suez One", sans-serif;
+      font-size: 90px;
+    }
 
-  &_accolade {
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    &--accolade {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 18px;
+    }
   }
 }
